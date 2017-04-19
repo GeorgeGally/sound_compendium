@@ -1,0 +1,429 @@
+#header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 0;
+  line-height: 50px;
+  z-index: 2;
+}
+#header .header-content {
+  height: 50px;
+  margin-right: 205px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+}
+#header .header-content > .tit,
+#header .header-content .subtit {
+  display: inline-block;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 18px;
+}
+#header .header-content > .tit em,
+#header .header-content .subtit em {
+  font-style: italic;
+}
+#header .header-content > .tit {
+  margin-left: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#header .header-content .subtit {
+  font-weight: 400;
+}
+#header .header-content .subtit .dot {
+  margin: 0 5px;
+}
+#header .header-actions {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#header #btnInfo,
+#header #btnHowTo {
+  float: right;
+  height: 30px;
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: 'Lato', Arial, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  min-width: 30px;
+  background: rgba(255, 255, 255, 0.8);
+  width: 50px;
+  height: 50px;
+  margin-left: 3px;
+}
+#header #btnInfo .action,
+#header #btnHowTo .action {
+  margin-left: 5px;
+}
+#header #btnInfo:hover,
+#header #btnHowTo:hover {
+  background: #ffffff;
+}
+#header #btnInfo.active,
+#header #btnHowTo.active,
+#header #btnInfo.intro-active,
+#header #btnHowTo.intro-active {
+  background: rgba(195, 28, 61, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+}
+#header #btnInfo.active:hover,
+#header #btnHowTo.active:hover,
+#header #btnInfo.intro-active:hover,
+#header #btnHowTo.intro-active:hover {
+  background: #c31c3d;
+}
+#header #btnInfo .action,
+#header #btnHowTo .action {
+  margin: 0;
+}
+#header #btnHowTo {
+  padding-top: 5px;
+}
+#header #btnShare {
+  float: right;
+}
+#header #btnShare .entypo-export {
+  display: inline-block;
+  display: none !important;
+  height: 30px;
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: 'Lato', Arial, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  min-width: 30px;
+  background: rgba(255, 255, 255, 0.8);
+  width: 82px;
+  height: 50px;
+}
+#header #btnShare .entypo-export .action {
+  margin-left: 5px;
+}
+#header #btnShare .entypo-export:hover {
+  background: #ffffff;
+}
+#header #btnShare .entypo-export.active,
+#header #btnShare .entypo-export.intro-active {
+  background: rgba(195, 28, 61, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+}
+#header #btnShare .entypo-export.active:hover,
+#header #btnShare .entypo-export.intro-active:hover {
+  background: #c31c3d;
+}
+#header #btnShare .entypo-export:before {
+  padding: 0 0 0 10px;
+}
+#header #btnShare .entypo-export span {
+  margin-left: 3px;
+}
+#header #btnShare .social {
+  z-index: 1;
+}
+#header #btnShare .social [class^="entypo-"] {
+  height: 30px;
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: 'Lato', Arial, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  min-width: 30px;
+  background: rgba(255, 255, 255, 0.8);
+  list-style: none;
+  display: inline-block;
+  width: 30px;
+  height: 50px;
+  margin-left: 3px;
+  text-align: center;
+}
+#header #btnShare .social [class^="entypo-"] .action {
+  margin-left: 5px;
+}
+#header #btnShare .social [class^="entypo-"]:hover {
+  background: #ffffff;
+}
+#header #btnShare .social [class^="entypo-"].active,
+#header #btnShare .social [class^="entypo-"].intro-active {
+  background: rgba(195, 28, 61, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+}
+#header #btnShare .social [class^="entypo-"].active:hover,
+#header #btnShare .social [class^="entypo-"].intro-active:hover {
+  background: #c31c3d;
+}
+
+.dialog {
+  position: relative;
+  padding-right: 33px;
+}
+.dialog .dialog-content {
+  width: 400px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 5px 10px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: normal;
+}
+.dialog * {
+  font-size: 14px;
+  line-height: 1.5em;
+}
+.dialog .subtit {
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.dialog .subtit + p {
+  margin-top: 0;
+}
+.dialog .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 30px;
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: 'Lato', Arial, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  min-width: 30px;
+  background: rgba(255, 255, 255, 0.8);
+}
+.dialog .btn-close .action {
+  margin-left: 5px;
+}
+.dialog .btn-close:hover {
+  background: #ffffff;
+}
+.dialog .btn-close.active,
+.dialog .btn-close.intro-active {
+  background: rgba(195, 28, 61, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+}
+.dialog .btn-close.active:hover,
+.dialog .btn-close.intro-active:hover {
+  background: #c31c3d;
+}
+.dialog .contact-link {
+  margin: 0 2px;
+}
+.dialog .contact-link:hover {
+  text-decoration: none;
+}
+.dialog .contact-link:hover:before {
+  color: #FFF;
+}
+.dialog.custom-dialog {
+  position: absolute;
+  top: 53px;
+  right: 0;
+  padding-right: 53px;
+}
+.dialog.custom-dialog .btn-close {
+  width: 50px;
+  height: 50px;
+}
+.dialog.custom-dialog#dialogClick {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 100px;
+  padding: 0;
+  margin: -50px 0 0 -150px;
+  -webkit-transform: translate(0, 0) !important;
+  -ms-transform: translate(0, 0) !important;
+  transform: translate(0, 0) !important;
+}
+.dialog.custom-dialog#dialogClick .dialog-content {
+  width: auto;
+  background: none;
+  text-align: center;
+}
+.dialog.custom-dialog#dialogClick .dialog-content .tit {
+  font-size: 30px;
+  font-weight: 400;
+}
+.ui-widget-overlay {
+  background: rgba(255, 255, 255, 0.4) !important;
+}
+.ui-dialog {
+  padding: 0 !important;
+}
+.ui-dialog .ui-dialog-titlebar {
+  padding: 0 !important;
+}
+.ui-dialog .ui-dialog-title {
+  height: 0;
+  padding: 0;
+  margin: 0;
+}
+.ui-dialog .ui-dialog-titlebar-close {
+  height: 30px;
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: 'Lato', Arial, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  min-width: 30px;
+  background: rgba(255, 255, 255, 0.8);
+  right: -33px !important;
+  margin: 0 !important;
+}
+.ui-dialog .ui-dialog-titlebar-close .action {
+  margin-left: 5px;
+}
+.ui-dialog .ui-dialog-titlebar-close:hover {
+  background: #ffffff;
+}
+.ui-dialog .ui-dialog-titlebar-close.active,
+.ui-dialog .ui-dialog-titlebar-close.intro-active {
+  background: rgba(195, 28, 61, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+}
+.ui-dialog .ui-dialog-titlebar-close.active:hover,
+.ui-dialog .ui-dialog-titlebar-close.intro-active:hover {
+  background: #c31c3d;
+}
+.ui-dialog .ui-dialog-content {
+  padding: 0;
+}
+.ui-dialog .dialog .dialog-content {
+  width: auto;
+}
+.ui-dialog.no-close .ui-dialog-titlebar-close {
+  display: none !important;
+}
+.ui-dialog .ui-dialog-buttonpane {
+  padding: 0;
+  margin-top: 3px;
+}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+  float: none;
+}
+.ui-dialogIntro .dialog * {
+  font-size: 20px;
+}
+.ui-dialogIntro .tit {
+  text-align: center !important;
+}
+.ui-dialogIntro #btnStart.btn {
+  height: 30px;
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: 'Lato', Arial, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  min-width: 30px;
+  background: rgba(255, 255, 255, 0.8);
+  display: block !important;
+  width: 100%;
+  height: auto !important;
+  padding: 20px !important;
+  margin-top: 3px !important;
+  font-size: 30px !important;
+}
+.ui-dialogIntro #btnStart.btn .action {
+  margin-left: 5px;
+}
+.ui-dialogIntro #btnStart.btn:hover {
+  background: #ffffff;
+}
+.ui-dialogIntro #btnStart.btn.active,
+.ui-dialogIntro #btnStart.btn.intro-active {
+  background: rgba(195, 28, 61, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+}
+.ui-dialogIntro #btnStart.btn.active:hover,
+.ui-dialogIntro #btnStart.btn.intro-active:hover {
+  background: #c31c3d;
+}
+.ui-bar ul {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.ui-bar ul .item {
+  height: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 5px 10px;
+  margin: 0 3px 3px 0;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+}
+.ui-bar ul .item strong {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-right: 5px;
+}
+.ui-bar ul .item em {
+  text-transform: lowercase;
+  font-style: normal;
+  font-weight: 700;
+}
+.ui-bar ul .item.control .action {
+  color: rgba(179, 179, 179, 0.8);
+}
+.ui-bar ul .item.btn-wrap {
+  background: rgba(255, 255, 255, 0.4);
+  height: 30px;
+  padding: 0;
+}
+.ui-bar ul .item.btn-wrap:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+.ui-bar ul .item.btn-wrap .btn {
+  height: 30px;
+  min-width: 30px;
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: 'Lato', Arial, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+}
+.ui-bar ul .item.btn-wrap .btn .action {
+  margin-left: 5px;
+}
+.ui-bar ul .item.btn-wrap .btn,
+.ui-bar ul .item.btn-wrap .fa:before {
+  color: rgba(0, 0, 0, 0.8);
+}
+.ui-bar ul .item.btn-wrap .fa.fa-sort-down {
+  position: relative;
+  top: -3px;
+  margin-left: 5px;
+}
+.ui-bar ul .item.btn-wrap .fa.fa-sort-up {
+  position: relative;
+  top: 3px;
+  margin-left: 5px;
+}
+.ui-bar ul .item.btn-wrap .fa.fa-keyboard-o {
+  top: 0;
+}
+#c

@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+	<title>George Gally - Sound Reactive Compendium</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/audio.css" type="text/css" media="screen" />
+	<script src="js/jquery-1.4.2.min.js"></script>
+	<script language="javascript" src="js/creative_coding.js"></script>
+	<script language="javascript" src="js/processing.js"></script>
+</head>
+
+<body>
+
+
+
+<script type="text/javascript">
+
+	$(document).ready(function(){
+
+	window.addEventListener('resize', resizeCanvas, false);
+
+	function resizeCanvas() {
+		console.log('resize');
+            // resize the foreground canvas
+          $('.canvas_holder').each(function( index ) {
+            this.width = window.innerWidth;
+            this.height = window.innerHeight;
+        })
+          $('.spectrum').each(function( index ) {
+            this.width = window.innerWidth;
+            this.height = window.innerHeight;
+        })
+
+    };
+ resizeCanvas();
+
+})
+
+	</script>
+
+ <div class="site-width" style="background: #fff; position: relative">
+
+ <div class="site-width" style="background: #fafafa;">
+		<div id="content" class="content-width">
+
+			<div class="canvas_holder">
+
+				<canvas class="spectrum" data-processing-sources="processing/circle8b.pde"
+						width="800" height="600">
+					<p>Eek. Your browser does not support the canvas tag.</p>
+
+				</canvas>
+				<noscript>
+					<p>JavaScript is required to view the contents of this page.</p>
+				</noscript>
+	    <b>Sound investigation 1. </b>
+	    	</div>
+
+		</div>
+</div>
+
+
+  <div class="site-width" style="background: #000;">
+
+		<div id="content" class="content-width">
+
+			<div class="canvas_holder">
+
+				<canvas class="spectrum" data-processing-sources="processing/sound_spike_ball.pde"
+						width="800" height="600">
+				</canvas>
+
+	   		<b style="color: #fff; ">Sound investigation 2. </b>
+
+	    	</div>
+
+
+		</div>
+
+</div>
+
+
+<div class="site-width" style="background: #f7f7f7;">
+
+		<div id="content" class="content-width">
+
+			<div class="canvas_holder">
+
+				<canvas class="spectrum" data-processing-sources="processing/circle8c.pde"
+						width="800" height="600">
+				</canvas>
+	    	<b>Sound investigation 3. </b>
+	    	</div>
+
+		</div>
+
+</div>
+
+
+ <div class="site-width" style="background: #ffffff;">
+		<div id="content" class="content-width">
+
+			<div class="canvas_holder">
+
+				<canvas class="spectrum" data-processing-sources="processing/sound_block_ball3.pde"
+						width="800" height="600">
+				</canvas>
+
+	    <b>Sound investigation 4. </b><br>
+	    	</div>
+
+		</div>
+</div>
+
+</div>
+
+
+ <div class="site-width" style="background: #f7f7f7;">
+		<div id="content" class="content-width">
+
+			<div class="canvas_holder">
+
+				<canvas class="spectrum" data-processing-sources="processing/circle_how_sounds_look3d.pde"
+						width="800" height="600">
+				</canvas>
+
+	    <b>Sound investigation 5. </b><br>
+	    	</div>
+
+		</div>
+</div>
+
+
+<div class="site-width" style="background: #f3f3f3;">
+
+	<div id="content" class="content-width">
+
+
+			<div class="canvas_holder">
+
+
+				<canvas class="spectrum" data-processing-sources="processing/sound-line.pde"
+						width="800" height="600">
+				</canvas>
+
+
+	    	</div>
+	    	<br><br>
+		<b>Sound investigation 6. </b>
+	</div>
+
+</div>
+
+
+
+
+</div>
+
+<script src="js/soundcloud.js"></script>
+
+</body>
+</html>
