@@ -1,1 +1,2 @@
-# sound_compendium
+# Sound Compendium
+Sound reactive experiments in processing.
